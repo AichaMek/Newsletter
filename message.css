@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+ :root{
+    /*fonts*/
+
+    --font--family:'Roboto','sans-serif';
+    --font--size:16px;
+    --font-weight-normal:400;
+    --font-weight-bold:700;
+
+    /*colors*/
+    /*Primary*/
+    
+    --Tomato: hsl(4, 100%, 67%);
+
+     /* Neutral*/
+    
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --animation: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+ }
+ *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ }
+ body{
+    background-color: var(--Dark-Slate-Grey);
+ }
+ .container{
+    margin-top: 150px;
+    margin-left: 480px;
+    background-color: var(--White);
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    font-family: var(--font--family);
+ }
+ .container img{
+    margin-left: 50px;
+    margin-top: 30px;
+ }
+ .container h1{
+    margin-top: 20px;
+    margin-left: 50px;
+    font-weight: var(--font-weight-bold);
+    font-size: 50px;
+    color: var(--Dark-Slate-Grey);
+ }
+ .container p{
+    margin-top: 15px;
+    margin-left: 50px;
+    width: 300px;
+    font-size: 12px;
+    font-weight: var(--font-weight-normal);
+ }
+ .container p span{
+    color: var(--Charcoal-Grey);
+ }
+ button{
+    margin-left: 50px;
+    margin-top: 30px;
+    background-color: var(--Dark-Slate-Grey);
+    color: var(--White);
+    border: hidden;
+    border-radius: 10px;
+    width: 300px;
+    padding: 10px;
+ }
+ button:hover{
+   background-color: var(--Tomato);
+   cursor: pointer;
+}
+@media screen and (max-width:375px){
+   body{
+      background-color: white;
+   }
+   .container{
+      margin-top: 0;
+      margin-left: 0;
+      width: 375px;
+   }
+   .container img{
+      margin-top: 90px;
+   }
+   button{
+      margin-top: 200px;
+   }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+     <h1>Stay updated!</h1>
+     <p>Join 60,000+ product managers receiving monthly updates on:</p>
+     <p><img src="./assets/images/icon-list.svg" alt="icon-list"> Product discovery and building what matters</p>
+     <p><img src="./assets/images/icon-list.svg" alt="icon-list"> Measuring to ensure updates are a success</p>
+     <p><img src="./assets/images/icon-list.svg" alt="icon-list"> And much more!</p>
+     <div class="form">
+      <form action="message.html">
+       <label for="Email address" id="email-label">Email address </label>
+       <span id="email-error">valid email required</span>
+       <input name="Email address" type="email"  placeholder=" email@company.com" id="email" ><br>
+       <button onclick="validateEmail()">Subscribe to monthly newsletter</button>
+      </form>
+     </div>
+    </div>
+    <img src="assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop" width="430px" height="465px">
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
